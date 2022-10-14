@@ -1,0 +1,124 @@
+.header {
+    background: #1647B2;
+    height: 10vh;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        padding-left: 5rem;
+        width: 30%;
+        NavLink {
+            display: block;
+            z-index: 1;
+            object {
+                cursor: pointer;
+                z-index: -1;
+            }
+        }
+    }
+    .navigation {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            li {
+                list-style-type: none;
+                &:hover {
+                    a > .dropdown {
+                        display: block;
+                    }
+                    a > span > object {
+                        transform: rotate(180deg);
+                    }
+                }
+                a {
+                    color: rgba(255, 255, 255, 0.829);
+                    font-size: 15px;
+                    font-weight: 600;
+                    opacity: 1;
+                    position: relative;
+                    span {
+                        object {
+                                margin-left: 7px;
+                        }
+                    }
+                    .dropdown {
+                        display: none;
+                        position: absolute;
+                        background-color: #ffffff;
+                        min-width: 300px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+                        padding: 25px;
+                        z-index: 100;
+                        border-radius: 10px;
+                        li {
+                            list-style-type: none;
+                            border-bottom: 1px rgba(0,0,0,0.1) solid;
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            &:hover{
+                                background: rgba(0,0,0,0.05);
+                                border-radius: 15px;
+                            }
+                            a {
+                                color: #000;
+                                font-size: 15px;
+                                font-weight: 600;
+                                opacity: 1;
+                                .dropdown-box {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    padding: 15px;
+                                    .drop-icon {
+                                        img {
+                                            width: 60px;
+                                            height: 60px;
+                                        }
+                                    }
+                                    .drop-content {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        margin-left: 1.5rem;
+                                        h4 {
+                                            margin: 0;
+                                            font-size: 15px;
+                                        }
+                                        p {
+                                            margin: 0;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cta {
+        padding-right: 5rem;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #000000;
+            background: #FFFFFF;
+            padding: 15px 20px;
+        }
+    }
+}
