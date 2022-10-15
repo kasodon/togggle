@@ -1,5 +1,6 @@
 import ball from '../../assets/ball.svg';
 import illus from '../../assets/security.svg';
+import privacy from '../../assets/private.svg';
 import './landing.scss';
 
 function Landing() {
@@ -33,6 +34,43 @@ function Landing() {
         <p>No SVG support, here's a substitute</p>
         <img src={illus} alt="illustration" />
       </object>
+                   </div>
+               </div>
+           </div>
+           <div className="how">
+               <div className="how-title">
+                   <h2>How it works</h2>
+               </div>
+               <div className="how-content">
+                   <div className="how-box b">
+                       <div className="how-icon">
+                       <object className="thunder" data={privacy} type="image/svg+xml" title="thunder" alt="thunder">
+        <p>No SVG support, here's a substitute</p>
+        <img src={privacy} alt="thunder" />
+      </object>
+                       </div>
+                       <h4>Instant onboarding</h4>
+                       <p>We’ve designed a frictionless onboarding flow that means our ecosystem of customers only ever have to complete onboarding once. When they join a company already using Togggle they are instantly verified.</p>
+                   </div>
+                   <div className="how-box">
+                       <div className="how-icon">
+                       <object className="storage" data={privacy} type="image/svg+xml" title="storage" alt="storage">
+        <p>No SVG support, here's a substitute</p>
+        <img src={privacy} alt="storage" />
+      </object>
+                       </div>
+                       <h4>Decentralised storage</h4>
+                       <p>The majority of KYC providers operate in a centralised environment exposing them and their customers to data breaches. At Togggle we use blockchain technology to decentralise data storage, protecting you and your customers.</p>
+                   </div>
+                   <div className="how-box e">
+                       <div className="how-icon">
+                       <object className="privacy" data={privacy} type="image/svg+xml" title="privacy" alt="ball">
+        <p>No SVG support, here's a substitute</p>
+        <img src={privacy} alt="privacy" />
+      </object>
+                       </div>
+                       <h4>Compliance ready</h4>
+                       <p>Keeping up with everchanging compliance is time consuming and expensive. Focus on what matters most, scaling your business, and leave the identity verification, compliance and storage to us.</p>
                    </div>
                </div>
            </div>
